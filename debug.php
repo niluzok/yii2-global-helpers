@@ -4,51 +4,51 @@ use \yii\helpers\VarDumper;
 
 /**
  * VarDumper::dump() shortcut with highlighting
- * @param  mixed $variable
+ * @param  mixed $var
  * @return void
  */
-function d($variable)
+function d($var, $depth = 10, $highlight = true)
 {
-    VarDumper::dump($variable, 10, true);
+    VarDumper::dump($var, $depth, $highlight);
 }
 
 /**
  * VarDumper::dumpAsString() shortcut with highlighting
- * @param  mixed $variable
+ * @param  mixed $var
  * @return string
  */
-function ds($variable)
+function ds($var, $depth = 10, $highlight = true)
 {
-    return VarDumper::dumpAsString($variable, 10, true);
+    return VarDumper::dumpAsString($var, $depth, $highlight);
 }
 
 /**
  * dump and die
- * @param  mixed $variable
+ * @param  mixed $var
  * @return void
  */
-function dd($variable)
+function dd($var, $depth = 10, $highlight = true)
 {
-    VarDumper::dump($variable, 10, true);
+    VarDumper::dump($var, $depth, $highlight);
     die;
 }
 
 /**
  * Exports and outputs variable 
- * @param  mixed $variable
+ * @param  mixed $var
  * @return void
  */
-function e($variable)
+function e($var)
 {
-    echo VarDumper::export($variable)."\n";
+    echo VarDumper::export($var)."\n";
 }
 
 /**
  * Exports variable as string
- * @param  mixed $variable
+ * @param  mixed $var
  * @return string
  */
-function es($variable)
+function es($var)
 {
-    return VarDumper::export($variable);
+    return VarDumper::export($var);
 }
