@@ -1,0 +1,12 @@
+{
+    "name": "niluzok\yii2-global-helpers",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+    },
+    "autoload": {
+        "files": [
+            "functions.php",
+        ]
+    }
+}
