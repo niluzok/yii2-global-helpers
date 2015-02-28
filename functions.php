@@ -1,29 +1,28 @@
 <?php
 
-use \yii\helpers\VarDumper;
-
-function d($var)
+/**
+ * Shortcut for \Yii::$app
+ * @return yii\base\Application
+ */
+function app()
 {
-    VarDumper::dump($var, 10, true);
+    return Yii::$app;
 }
 
-function ds($var)
+/**
+ * Shortcut for \Yii::$app->user
+ * @return yii\web\User
+ */
+function user()
 {
-    return VarDumper::dumpAsString($var, 10, true);
+    return Yii::$app->user;
 }
 
-function dd($var)
+/**
+ * Shortcut for \Yii::$app->params
+ * @return array
+ */
+function params()
 {
-    VarDumper::dump($var, 10, true);
-    Yii::$app->end();;
-}
-
-function e($var)
-{
-    echo VarDumper::export($var)."\n";
-}
-
-function es($var)
-{
-    return VarDumper::export($var);
+    return Yii::$app->params;
 }
