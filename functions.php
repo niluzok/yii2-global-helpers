@@ -20,9 +20,9 @@ function user()
 
 /**
  * Shortcut for \Yii::$app->params
- * @return array
+ * @return mixed
  */
-function params()
+function params($paramName = null)
 {
-    return Yii::$app->params;
+    return $paramName ? Yii::$app->params[$paramName] : Yii::$app->params;
 }
