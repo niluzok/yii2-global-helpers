@@ -17,3 +17,18 @@ global shortcut functions for various yii2 components
 **e()** = echo VarDumper::export()
 
 **es()** = return VarDumper::export()
+
+## install
+
+just add to your composer.json
+
+    "require": {
+      "niluzok/yii2-global-helpers": "~1.0.0"
+    },
+
+
+    composer update
+
+and use them as ordinal function with no namespace
+
+    echo params('some-param-name');
