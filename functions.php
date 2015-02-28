@@ -1,7 +1,5 @@
 <?php
 
-namespace niluzok\yii2\global_helpers;
-
 use \yii\helpers\VarDumper;
 
 function d($var)
