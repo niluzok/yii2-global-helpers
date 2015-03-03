@@ -10,6 +10,15 @@ function app()
 }
 
 /**
+ * Shortcut for \Yii::$app->db
+ * @return yii\base\Application
+ */
+function db()
+{
+    return Yii::$app->db;
+}
+
+/**
  * Shortcut for \Yii::$app->user
  * @return yii\web\User
  */
