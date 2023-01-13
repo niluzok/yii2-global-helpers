@@ -34,6 +34,17 @@ function dd($var, $depth = 10, $highlight = true)
 }
 
 /**
+ * Console dump and die
+ * @param  mixed $var
+ * @return void
+ */
+function cdd($var, $depth = 10, $highlight = true)
+{
+    var_dump($var);
+    die;
+}
+
+/**
  * Exports and outputs variable 
  * @param  mixed $var
  * @return void
